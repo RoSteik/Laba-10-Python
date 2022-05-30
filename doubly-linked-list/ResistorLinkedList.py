@@ -55,17 +55,18 @@ class ResistorLinkedList:
                     next_node = next_node.next
                 current_node = current_node.next
 
-    def print_resistors_with_accuracy_bigger_than(self, accuracy: float):
+    def print_resistors_with_accuracy_bigger_than(self, input_accuracy: float):
         current_node = self.head
+
         if self.head is None:
             print("List is empty")
             return
 
         while current_node is not None:
             # Prints each node by incrementing pointer.
-            if accuracy < current_node.data.accuracy:
+            if input_accuracy < current_node.data.accuracy:
                 print(current_node.data)
-                current_node = current_node.next
+            current_node = current_node.next
 
     def print_list(self):
         current_node = self.head
@@ -77,4 +78,3 @@ class ResistorLinkedList:
             # Prints each node by incrementing pointer.
             print(current_node.data)
             current_node = current_node.next
-

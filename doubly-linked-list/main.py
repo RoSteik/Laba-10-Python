@@ -31,4 +31,4 @@ if __name__ == '__main__':
 
     print()
     print("Resistors which have accuracy better than input accuracy: ")
-    resistors_list.print_resistors_with_accuracy_bigger_than(0.7)
+    resistors_list.print_resistors_with_accuracy_bigger_than(0.79)
